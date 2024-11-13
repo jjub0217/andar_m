@@ -6,9 +6,9 @@ import App from "./App";
 const container = document.getElementById("root"); 
 const root = createRoot(container);
 root.render(
-  <Router>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Routes>
       <Route path="/" element={<App />} />
     </Routes>
-  </Router>
+  </BrowserRouter>
 );
